@@ -29,6 +29,10 @@
   <a href="https://github.com/InsaneArts/opie/issues/new/choose">Report a bug</a>
 </p>
 
+<p align="center">
+  <a href="https://opies.io"><img src=".github/assets/hero.jpg" width="100%" alt="The Slack App Ring open above the Dock, with Set Status in its Center, and the 14 apps that come with a ready App Ring"></a>
+</p>
+
 This repository is where Opie is discussed in public: bug reports, requests, questions, and the changelog. Opie's source code lives elsewhere and is not part of this repository.
 
 ## The move
