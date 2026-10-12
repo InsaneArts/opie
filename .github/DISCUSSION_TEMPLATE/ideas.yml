@@ -1,0 +1,36 @@
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Half-formed is fine here. An idea that survives this thread can become a feature request.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What Opie would do, and when.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What you are doing on your Mac when you want this, and what you do today instead.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of Opie
+      options:
+        - The Ring itself (holding, aiming, letting go, scrolling)
+        - A new Action
+        - Rings and Slices (Custom, App, or Dedicated)
+        - Settings
+        - Something Opie does not do at all
+    validations:
+      required: true

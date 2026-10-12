@@ -1,0 +1,28 @@
+title: "[Question] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search the answered questions first; many are already there.
+
+        If Opie is broken rather than unclear, [open a bug report](https://github.com/InsaneArts/opie/issues/new/choose) instead.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you have tried
+      description: Optional, and it usually saves a round trip.
+
+  - type: input
+    id: opie-version
+    attributes:
+      label: Opie version
+      description: Only if the answer could depend on it. Settings › General shows it.
+      placeholder: 0.1.0 (512)

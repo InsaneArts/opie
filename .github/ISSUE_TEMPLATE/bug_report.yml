@@ -1,0 +1,97 @@
+name: Bug report
+description: Something in Opie does not work, or works in a way it should not.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. The more exactly a bug is described, the sooner it is fixed.
+
+        A security issue does not belong here. See [SECURITY.md](https://github.com/InsaneArts/opie/blob/main/SECURITY.md).
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what Opie did, and what you expected instead.
+      placeholder: |
+        I held fn over Safari and flicked toward New Tab. The Ring closed, but no tab opened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Number them, starting before you hold your Binding. If it only happens sometimes, say how often.
+      placeholder: |
+        1. Open Safari with one window.
+        2. Hold fn.
+        3. Flick toward New Tab and let go.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of Opie
+      options:
+        - The Ring itself (holding, aiming, letting go, scrolling)
+        - A Custom Ring
+        - An App Ring
+        - The Media Ring
+        - An Action, Keystroke, or Shortcut
+        - Settings
+        - The menu bar mark, or updating
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: action
+    attributes:
+      label: The Action, and the app in front
+      description: The Slice you fired and the app that was in front, with its version if you know it.
+      placeholder: New Tab in Safari 26.0
+
+  - type: input
+    id: opie-version
+    attributes:
+      label: Opie version
+      description: Settings › General shows it, with the build number.
+      placeholder: 0.1.0 (512)
+    validations:
+      required: true
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version and Mac
+      description: "Apple menu › About This Mac."
+      placeholder: macOS 26.0, MacBook Pro M3
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log output
+      description: |
+        Optional, and the fastest way to a fix. Run this in Terminal, reproduce the bug, then paste what appeared:
+
+        ```sh
+        log stream --predicate 'subsystem == "com.insanearts.opie"'
+        ```
+
+        Read what you paste before you paste it.
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I am on the latest version of Opie, or I said above why I am not.
+          required: true
+        - label: I searched the open issues and this is not one of them.
+          required: true

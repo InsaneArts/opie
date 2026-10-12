@@ -1,0 +1,43 @@
+name: App Ring request
+description: An app that should have a ready App Ring, or one that needs more Actions.
+labels: ["app ring"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Any app can already have an App Ring that you fill yourself. This form asks for a ready one, with Actions made for the app.
+
+  - type: input
+    id: app
+    attributes:
+      label: The app
+      description: Its name, and a link to it.
+      placeholder: Figma, https://www.figma.com/downloads
+    validations:
+      required: true
+
+  - type: textarea
+    id: actions
+    attributes:
+      label: What you do in it most
+      description: The commands you reach for every day, one per line, with the app's own keyboard shortcut for each if it has one.
+      placeholder: |
+        Zoom to fit (Shift-1)
+        Toggle the layers panel (Option-L)
+        Copy as PNG (Shift-Command-C)
+    validations:
+      required: true
+
+  - type: textarea
+    id: today
+    attributes:
+      label: How you do them today
+      description: Menus, shortcuts you keep forgetting, a mouse trip across the screen.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open issues and this app is not already requested.
+          required: true
