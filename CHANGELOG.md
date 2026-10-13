@@ -2,6 +2,12 @@
 
 Every released version of Opie, newest first, with the download on the [releases page](https://github.com/InsaneArts/opie/releases). Opie checks for a new version once a day and offers to install it.
 
+## 1.1.0: Getting Started (2026-10-13)
+
+- A first launch opens Getting Started. You play Pop!, a one-minute game that teaches the Ring before Opie asks for anything. Then you give Opie Accessibility, fire one Action for real, and keep fn or pick another key.
+- A tour of Settings follows. A card points at each control while you make a Ring, add Actions, give the Ring its key, and use it. Optional chapters show App Rings, the Media Ring, Keystrokes and Shortcuts, Groups, and Appearance.
+- Getting Started in Opie's menu bar menu opens it at any time. An update from 1.0.0 does not open it on its own.
+
 ## 1.0.0 (2026-10-12)
 
 The first public release of Opie.
