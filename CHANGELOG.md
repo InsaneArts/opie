@@ -2,6 +2,12 @@
 
 Every released version of Opie, newest first, with the download on the [releases page](https://github.com/InsaneArts/opie/releases). Opie checks for a new version once a day and offers to install it.
 
+## 1.1.1 (2026-10-15)
+
+- Screenshot & Recording Tools works again, and so do other Keystrokes for macOS shortcuts. Before, they did nothing while the Run reported success.
+- Settings no longer stays in front of other apps' windows. It stands in front only during Getting Started.
+- In a Liquid Ring, a Group's add buttons and the new moon's outline sit on the moons again.
+
 ## 1.1.0: Getting Started (2026-10-13)
 
 - A first launch opens Getting Started. You play Pop!, a one-minute game that teaches the Ring before Opie asks for anything. Then you give Opie Accessibility, fire one Action for real, and keep fn or pick another key.
