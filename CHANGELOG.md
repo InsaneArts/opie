@@ -2,6 +2,35 @@
 
 Every released version of Opie, newest first, with the download on the [releases page](https://github.com/InsaneArts/opie/releases). Opie checks for a new version once a day and offers to install it.
 
+## 1.2.0: Statistics (2026-10-15)
+
+### New
+
+- Statistics, a new seat in Settings, shows how you use Opie: your flicks, streaks, a calendar of active days, your favorite Actions and Rings, and milestones. The numbers stay on your Mac and are never part of the usage counts. You can pause or reset them on the page.
+- The Folder card opens a folder in Finder from a Slice: Downloads, Applications, Desktop, Documents, Home, or any folder you choose.
+- Rings can share a key. Hold it and scroll to switch between them, and the Ring you used last opens next time. On the App Ring key, the App Ring of the app in front opens first.
+
+### Changes
+
+- A scroll while you hold a key reaches only the Rings on that key. On the App Ring key, other apps' App Rings no longer join.
+- Each Slice name on the Ring sits on a small mat, so it reads on any wallpaper, in light and dark.
+- Every App Ring in Settings shows its app's icon. When the app is not installed, the icon shows faded with a download badge.
+- The installer window shows where to drag Opie.
+
+### Fixes
+
+- Xcode Actions work again after Xcode relaunches. Before, they said Xcode was no longer in front.
+- Lock Screen works on macOS 27.
+- Eject All Disks works. It ejects the disks and disk images in Finder's sidebar, and one disk in use does not keep the others mounted. It no longer asks for Finder Automation.
+- Getting Started notices the Accessibility grant without a relaunch. When Opie is missing from the Accessibility list, a panel beside System Settings lets you drag Opie into it.
+
+### Usage counts
+
+- Opie's anonymous usage counts now say which kind of Ring a flick comes from: one of your own Rings, an App Ring, or the Media Ring. For an App Ring, only the name of an app Opie ships Actions for is sent, such as Slack or Xcode. Any other app is counted as "other".
+- Once a day, Opie sends how many Rings, Saved Actions, Scripts, and mouse Bindings you have. Only the numbers leave your Mac. Names, keys, and contents stay on it.
+- Getting Started reports which steps it shows and where it ends, so we can see where it is too long.
+- To turn usage counts off, quit Opie and run `defaults write com.insanearts.opie OpieTelemetryEnabled -bool false`.
+
 ## 1.1.1 (2026-10-15)
 
 - Screenshot & Recording Tools works again, and so do other Keystrokes for macOS shortcuts. Before, they did nothing while the Run reported success.
