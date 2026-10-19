@@ -2,6 +2,20 @@
 
 Every released version of Opie, newest first, with the download on the [releases page](https://github.com/InsaneArts/opie/releases). Opie checks for a new version once a day and offers to install it.
 
+## 1.3.0: Fire on Click (2026-10-19)
+
+### New
+
+- A Slice can fire on a click. In Settings, open Ring and set "Fire a Slice" to "On click". Hold your key to open the Ring, point at a Slice, and click it. A click on the Center cancels. "On release" stays the default.
+
+### Changes
+
+- Liquid is the default Theme. A Theme you picked in Settings stays.
+
+### Fixes
+
+- The Slack App Ring works again. Search, Quick Switcher, Unread, Threads, and DMs open in Slack. Before, they did nothing while the Run reported success.
+
 ## 1.2.0: Statistics (2026-10-15)
 
 ### New
