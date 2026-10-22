@@ -2,6 +2,27 @@
 
 Every released version of Opie, newest first, with the download on the [releases page](https://github.com/InsaneArts/opie/releases). Opie checks for a new version once a day and offers to install it.
 
+## 1.4.0: Files and AirDrop (2026-10-22)
+
+### New
+
+- Four new Actions in Files & research work on everything you select in Finder. Copy Files puts the items on the clipboard, ready to paste in Finder. AirDrop opens the AirDrop picker with them. Move to Folder and Copy to Folder ask for a folder each time. If a name is already in that folder, they move or copy nothing.
+- You can set the dead zone. In Settings, open Ring and pick a Dead zone: Small (8 px), Standard (16 px), Large (22 px), or Extra large (28 px). A release inside the dead zone cancels. Standard stays the default. The setting shows when "Fire a Slice" is "On release".
+- Ring size goes up to 200%. On a larger Ring, child Slices fire where the Ring draws them.
+- The Media Ring stays open after a click or a digit fires a Slice, so you can pause and skip in one hold. Let go to close it.
+
+### Changes
+
+- Copy full file path copies the path of every selected item, one per line.
+- The Ring in the Settings preview stays at 100%, whatever Ring size says. The live Ring, Try it, and Practice show your Ring size.
+
+### Fixes
+
+- Keystrokes work right after you allow Accessibility. Before, they failed until Opie restarted.
+- A Binding made with Hyperkey opens the Ring. Opie now reads each key after other apps change it.
+- When you record a Binding or a Keystroke, Opie hears system shortcuts such as ⇧⌘Tab and ⌃Space.
+- The tour no longer stops at "Now scroll between Rings." It shows that step only when another Ring shares the new Ring's Binding.
+
 ## 1.3.0: Fire on Click (2026-10-19)
 
 ### New
